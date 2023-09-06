@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+       <div class="title">
+        <h2 class="text-center my-3">Bookmarker</h2>
+    </div>
+    <div class="bookmark-body">
+        <h2 class="text-center my-4 bookmark"> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i> </h2>
+        <div class="input-group">
+            <label for="siteName" class="w-100 fw-bold mb-3 "> <i class="fa-solid fa-book"></i> Site Name</label>
+            <input type="text" id="siteName" class="form-control rounded">
+
+        </div>
+        <div class="input-group my-4">
+            <label for="websiteURL" class="w-100 fw-bold mb-3 "> <i class="fa-solid fa-book"></i> Website URL</label>
+            <input type="text" id="websiteURL" class="form-control rounded">
+
+        </div>
+        <div class="btn  w-100">
+            <button onclick="addProduct()" class="btn btnColor" id="displayData">Submit</button>
+        </div>
+    </div>
+    <div class="table">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id="rowsContainer">
+           
+          <!-- Dynamic js code here  -->
+              
+            </tbody>
+          </table>
+    </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
